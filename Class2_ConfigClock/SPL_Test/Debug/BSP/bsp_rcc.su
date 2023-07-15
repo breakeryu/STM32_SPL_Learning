@@ -1,0 +1,2 @@
+../BSP/bsp_rcc.c:15:6:BSP_RCC_NVIC_Configuration	16	static
+../BSP/bsp_rcc.c:31:6:BSP_RCC_Init	8	static
