@@ -1,0 +1,4 @@
+delay.c:90:6:delay_init	1
+delay.c:154:6:delay_us	3
+delay.c:173:6:delay_xms	3
+delay.c:188:6:delay_ms	3
