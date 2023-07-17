@@ -1,0 +1,4 @@
+../BSP/delay.c:90:6:delay_init	16	static
+../BSP/delay.c:154:6:delay_us	24	static
+../BSP/delay.c:173:6:delay_xms	24	static
+../BSP/delay.c:188:6:delay_ms	24	static
