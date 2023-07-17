@@ -79,22 +79,24 @@ void BSP_RCC_Periph_Clock_Init(void)
   RCC->APB1RSTR = 0;
 
   //AHB Peripheral CLK Enable
-  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_SRAM,ENABLE);
-  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_FLITF,ENABLE);
+  RCC_AHBPeriphClockCmd(RCC_AHBPeriph_SRAM  | RCC_AHBPeriph_FLITF , ENABLE);
+  
 
   //APB2 Peripheral CLK Enable
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO,ENABLE);
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB,ENABLE);
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC,ENABLE);
+  RCC_APB2PeriphClockCmd( RCC_APB2Periph_AFIO | RCC_APB2Periph_GPIOA  |
+                          RCC_APB2Periph_GPIOB  | RCC_APB2Periph_GPIOC,
+                        ENABLE);
 
   //APB1 Peripheral CLK Enable
   RCC->APB1ENR = 0;
-
+  
   //RTC CLK
   RCC_LSEConfig(RCC_LSE_ON);
   RCC_RTCCLKConfig(RCC_RTCCLKSource_LSI);
   RCC_RTCCLKCmd(ENABLE);
+
+
+
 
 }
 

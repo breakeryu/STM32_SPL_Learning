@@ -6,7 +6,7 @@
 #include "sys.h"
 #include "delay.h"
 #include "bsp_gpio.h"
-
+#include "bsp_tim.h"
 
 
 

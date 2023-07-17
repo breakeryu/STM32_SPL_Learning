@@ -36,13 +36,13 @@ int main(void)
     *   If using the PA15、PA14、PA13、PB4、PB3 for Remapping Pin, these Clock Must be Config before SWJ REMAP config Function!
     */
   sys_SWJ_REMAP_Config(SWJ_ENABLE);
-  BSP_GPIO_Init();
-  
+
+  BSP_Timer_Init();
 
 
   while (1)
   {
-    BSP_GPIO_Write_Demo();
+  
   }
   
 }

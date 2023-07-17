@@ -13,9 +13,9 @@
 #define MEM_ADDR(addr)  *((volatile unsigned long  *)(addr)) 
 #define BIT_ADDR(addr, bitnum)   MEM_ADDR(BITBAND(addr, bitnum)) 
 
-typedef uint32_t  u32;
-typedef uint16_t u16;
-typedef uint8_t  u8;
+
+
+
 
 
 #define SWJ_ENABLE     (uint8_t)0    //Full SWJ (JTAG-DP + SW-DP): Reset State

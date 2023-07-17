@@ -1,6 +1,7 @@
 "./BSP/bsp_board.o"
 "./BSP/bsp_gpio.o"
 "./BSP/bsp_rcc.o"
+"./BSP/bsp_tim.o"
 "./BSP/delay.o"
 "./BSP/sys.o"
 "./Libraries/CMSIS/CM3/CoreSupport/core_cm3.o"

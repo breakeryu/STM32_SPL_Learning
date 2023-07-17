@@ -63,8 +63,8 @@ all: main-build
 main-build: SPL_Test.elf secondary-outputs
 
 # Tool invocations
-SPL_Test.elf SPL_Test.map: $(OBJS) $(USER_OBJS) E:\Users\Learning\STM32_SPL_Learning\Class4_GPIO\SPL_Test\STM32F103ZETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "SPL_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Users\Learning\STM32_SPL_Learning\Class4_GPIO\SPL_Test\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPL_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+SPL_Test.elf SPL_Test.map: $(OBJS) $(USER_OBJS) E:\Users\Learning\STM32_SPL_Learning\Class5_TIM\SPL_Test\STM32F103ZETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "SPL_Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\Users\Learning\STM32_SPL_Learning\Class5_TIM\SPL_Test\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPL_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
