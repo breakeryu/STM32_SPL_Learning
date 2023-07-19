@@ -1,22 +1,18 @@
-# 一、     新建TIM驱动文件
-
-在BSP文件夹，新建如下的文件。
-
-![img](https://img2023.cnblogs.com/blog/1423856/202307/1423856-20230719075539713-2098625676.png)
-
-# 二、       PWM输出示例
-
-![img](https://img2023.cnblogs.com/blog/1423856/202307/1423856-20230719075539747-1120784253.jpg)
-
-# 三、       时基示例
-
-![img](https://img2023.cnblogs.com/blog/1423856/202307/1423856-20230719075539731-596962530.jpg)
+# 一、     ADC 对应通道的引脚
 
  
 
-# 四、       PWM INPUT示例
+![img](https://img2023.cnblogs.com/blog/1423856/202307/1423856-20230719112113082-766597924.jpg)
 
-![img](https://img2023.cnblogs.com/blog/1423856/202307/1423856-20230719075539736-659684874.jpg)
+创建驱动文件。
+
+![img](https://img2023.cnblogs.com/blog/1423856/202307/1423856-20230719112113138-1304191947.png)
+
+# 二、       ADC单通道DMA示例
+
+![img](https://img2023.cnblogs.com/blog/1423856/202307/1423856-20230719112113015-1354316173.jpg)
+
+ 
 
 # 参考资料：
 
@@ -24,4 +20,4 @@
 
 [Libraries and tutorials for STM32F4 series MCUs by Tilen Majerle](https://stm32f4-discovery.net/)
 
- 
+2. [ADC—电压采集多通道](https://doc.embedfire.com/mcu/stm32/f103mini/std/zh/latest/book/ADC.html#id22)
