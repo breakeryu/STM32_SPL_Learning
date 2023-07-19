@@ -2,6 +2,6 @@ bsp_tim.c:17:6:BSP_PWM_Init	1
 bsp_tim.c:86:6:BSP_PWM_TestDemo	1
 bsp_tim.c:96:6:BSP_Timer_Init	1
 bsp_tim.c:177:6:TIM4_IRQHandler	2
-bsp_tim.c:194:6:BSP_TIM_OCAcitve	1
-bsp_tim.c:255:6:BSP_PWM_INPUT_Init	1
-bsp_tim.c:325:6:TIM5_IRQHandler	2
+bsp_tim.c:196:6:BSP_TIM_OCAcitve	1
+bsp_tim.c:263:6:BSP_PWM_INPUT_Init	1
+bsp_tim.c:332:6:TIM5_IRQHandler	2

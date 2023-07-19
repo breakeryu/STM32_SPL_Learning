@@ -28,7 +28,7 @@ BSP/bsp_board.o: ../BSP/bsp_board.c ../BSP/bsp_board.h \
  ../Libraries/STM32F10x_StdPeriph_Driver/inc/misc.h ../BSP/bsp_rcc.h \
  ../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h \
  ../BSP/delay.h ../BSP/sys.h ../BSP/sys.h ../BSP/bsp_gpio.h \
- ../BSP/bsp_tim.h
+ ../BSP/bsp_tim.h ../BSP/bsp_adc.h
 ../BSP/bsp_board.h:
 ../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h:
 ../Libraries/CMSIS/CM3/CoreSupport/core_cm3.h:
@@ -64,3 +64,4 @@ BSP/bsp_board.o: ../BSP/bsp_board.c ../BSP/bsp_board.h \
 ../BSP/sys.h:
 ../BSP/bsp_gpio.h:
 ../BSP/bsp_tim.h:
+../BSP/bsp_adc.h:

@@ -5,6 +5,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../BSP/bsp_adc.c \
 ../BSP/bsp_board.c \
 ../BSP/bsp_gpio.c \
 ../BSP/bsp_rcc.c \
@@ -13,6 +14,7 @@ C_SRCS += \
 ../BSP/sys.c 
 
 OBJS += \
+./BSP/bsp_adc.o \
 ./BSP/bsp_board.o \
 ./BSP/bsp_gpio.o \
 ./BSP/bsp_rcc.o \
@@ -21,6 +23,7 @@ OBJS += \
 ./BSP/sys.o 
 
 C_DEPS += \
+./BSP/bsp_adc.d \
 ./BSP/bsp_board.d \
 ./BSP/bsp_gpio.d \
 ./BSP/bsp_rcc.d \
@@ -36,7 +39,7 @@ BSP/%.o BSP/%.su BSP/%.cyclo: ../BSP/%.c BSP/subdir.mk
 clean: clean-BSP
 
 clean-BSP:
-	-$(RM) ./BSP/bsp_board.cyclo ./BSP/bsp_board.d ./BSP/bsp_board.o ./BSP/bsp_board.su ./BSP/bsp_gpio.cyclo ./BSP/bsp_gpio.d ./BSP/bsp_gpio.o ./BSP/bsp_gpio.su ./BSP/bsp_rcc.cyclo ./BSP/bsp_rcc.d ./BSP/bsp_rcc.o ./BSP/bsp_rcc.su ./BSP/bsp_tim.cyclo ./BSP/bsp_tim.d ./BSP/bsp_tim.o ./BSP/bsp_tim.su ./BSP/delay.cyclo ./BSP/delay.d ./BSP/delay.o ./BSP/delay.su ./BSP/sys.cyclo ./BSP/sys.d ./BSP/sys.o ./BSP/sys.su
+	-$(RM) ./BSP/bsp_adc.cyclo ./BSP/bsp_adc.d ./BSP/bsp_adc.o ./BSP/bsp_adc.su ./BSP/bsp_board.cyclo ./BSP/bsp_board.d ./BSP/bsp_board.o ./BSP/bsp_board.su ./BSP/bsp_gpio.cyclo ./BSP/bsp_gpio.d ./BSP/bsp_gpio.o ./BSP/bsp_gpio.su ./BSP/bsp_rcc.cyclo ./BSP/bsp_rcc.d ./BSP/bsp_rcc.o ./BSP/bsp_rcc.su ./BSP/bsp_tim.cyclo ./BSP/bsp_tim.d ./BSP/bsp_tim.o ./BSP/bsp_tim.su ./BSP/delay.cyclo ./BSP/delay.d ./BSP/delay.o ./BSP/delay.su ./BSP/sys.cyclo ./BSP/sys.d ./BSP/sys.o ./BSP/sys.su
 
 .PHONY: clean-BSP
 

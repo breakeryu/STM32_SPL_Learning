@@ -37,12 +37,12 @@ int main(void)
     */
   sys_SWJ_REMAP_Config(SWJ_ENABLE);
 
-  BSP_PWM_INPUT_Init();
+  BSP_ADC_Init();
 
 
   while (1)
   {
-  
+    BSP_ADC_Val2Vltg();
   }
   
 }

@@ -7,6 +7,7 @@
 #include "delay.h"
 #include "bsp_gpio.h"
 #include "bsp_tim.h"
+#include "bsp_adc.h"
 
 
 

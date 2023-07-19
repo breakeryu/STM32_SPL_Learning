@@ -1,3 +1,4 @@
+"./BSP/bsp_adc.o"
 "./BSP/bsp_board.o"
 "./BSP/bsp_gpio.o"
 "./BSP/bsp_rcc.o"
