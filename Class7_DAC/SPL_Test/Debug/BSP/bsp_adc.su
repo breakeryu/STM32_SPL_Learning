@@ -1,0 +1,2 @@
+../BSP/bsp_adc.c:11:6:BSP_ADC_Init	80	static
+../BSP/bsp_adc.c:85:6:BSP_ADC_Val2Vltg	16	static
