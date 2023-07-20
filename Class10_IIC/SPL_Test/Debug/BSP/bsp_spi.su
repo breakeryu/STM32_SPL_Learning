@@ -1,0 +1,9 @@
+../BSP/bsp_spi.c:5:6:BSP_SPI_Init	16	static
+../BSP/bsp_spi.c:25:6:BSP_SPI_ClkEn	16	static
+../BSP/bsp_spi.c:61:6:BSP_SPI_PortCfg	16	static
+../BSP/bsp_spi.c:93:6:BSP_SPI_IoCfg	16	static
+../BSP/bsp_spi.c:146:6:BSP_SPI_ModeCfg	40	static
+../BSP/bsp_spi.c:227:6:BSP_SPI_Tx8Bit	16	static
+../BSP/bsp_spi.c:237:6:BSP_SPI_Tx16Bit	16	static
+../BSP/bsp_spi.c:247:9:BSP_SPI_TxRx8Bit	24	static
+../BSP/bsp_spi.c:272:10:BSP_SPI_TxRx16Bit	24	static
