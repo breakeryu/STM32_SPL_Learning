@@ -15,18 +15,15 @@ void BSP_GPIO_Init(void)
 
 void BSP_GPIO_Write_Demo(void)
 {
-    uint8_t actionBit = 0;//变量的类型转换演示
 
-    actionBit = 1;
-    GPIO_WriteBit(GPIOB, GPIO_Pin_5, Bit_SET);
-    GPIO_WriteBit(GPIOB, GPIO_Pin_8, (BitAction)actionBit);
-    GPIO_WriteBit(GPIOE, GPIO_Pin_5, Bit_SET);
+    BSP_GPIO_SetGPIO_OutPortSt(GPIOB, 5, 1);
+    BSP_GPIO_SetGPIO_OutPortSt(GPIOB, 8, 1);
+    BSP_GPIO_SetGPIO_OutPortSt(GPIOE, 5, 1);
     delay_ms(500);
-
-    actionBit = 0;
-    GPIO_WriteBit(GPIOB, GPIO_Pin_5, Bit_RESET);
-    GPIO_WriteBit(GPIOB, GPIO_Pin_8, (BitAction)actionBit);
-    GPIO_WriteBit(GPIOE, GPIO_Pin_5, Bit_RESET);
+    
+    BSP_GPIO_SetGPIO_OutPortSt(GPIOB, 5, 0);
+    BSP_GPIO_SetGPIO_OutPortSt(GPIOB, 8, 0);
+    BSP_GPIO_SetGPIO_OutPortSt(GPIOE, 5, 0);
     delay_ms(500);
 
 }

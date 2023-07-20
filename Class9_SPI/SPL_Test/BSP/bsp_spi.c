@@ -1,12 +1,24 @@
 #include "bsp_spi.h"
 
 
-
+/**
+  * @brief  Initialize the specified SPI peripheral.
+  * @param  SPIx: where x can be 1, 2 or 3 to select the SPI peripheral.
+  * @retval None
+  */
 void BSP_SPI_Init(SPI_TypeDef *spi)
 {
     BSP_SPI_ClkEn(spi);
     BSP_SPI_PortCfg(spi);
+
+	SPI_Cmd(spi, DISABLE);
+
     BSP_SPI_ModeCfg(spi);
+	SPI_SSOutputCmd(spi,ENABLE);
+
+	SPI_Cmd(spi, ENABLE);
+
+	BSP_SPI_TxRx8Bit(spi,0xFF);
 
 }
 
@@ -81,7 +93,10 @@ void BSP_SPI_PortCfg(SPI_TypeDef *SPI)
 	}
 }
 
-
+/**********************************************************************************
+  * SPI端口IO配置
+  * SPI:指向SPI1、SPI2、SPI3的指针
+ **********************************************************************************/
 void BSP_SPI_IoCfg(SPI_TypeDef *SPI)
 {
 
@@ -134,7 +149,10 @@ void BSP_SPI_IoCfg(SPI_TypeDef *SPI)
 }
 
 
-
+/**********************************************************************************
+  * SPI模式配置
+  * SPI:指向SPI1、SPI2、SPI3的指针
+ **********************************************************************************/
 void BSP_SPI_ModeCfg(SPI_TypeDef *SPI)
 {
     SPI_InitTypeDef   SPI_InitStructure;
@@ -152,30 +170,27 @@ void BSP_SPI_ModeCfg(SPI_TypeDef *SPI)
             SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
             SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
             SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-            SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
+            SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_16;
             SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
             SPI_InitStructure.SPI_CRCPolynomial = 7;
             SPI_Init(SPI1, &SPI_InitStructure);
 
-            /* Enable SPI1 */
-            SPI_Cmd(SPI1, ENABLE);
 
 #else
 
             /* SPIy Config -------------------------------------------------------------*/
-            SPI_InitStructure.SPI_Direction = SPI_Direction_1Line_Tx;
+            SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
             SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
             SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
             SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
             SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
             SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-            SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
+            SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_16;
             SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
             SPI_InitStructure.SPI_CRCPolynomial = 7;
             SPI_Init(SPI1, &SPI_InitStructure);
 
-            /* Enable SPI1 */
-            SPI_Cmd(SPI1, ENABLE);
+
 
 #endif
 		}
@@ -190,13 +205,10 @@ void BSP_SPI_ModeCfg(SPI_TypeDef *SPI)
             SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
             SPI_InitStructure.SPI_CPHA = SPI_CPHA_2Edge;
             SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
-            SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_4;
+            SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_16;
             SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_LSB;
             SPI_InitStructure.SPI_CRCPolynomial = 7;
             SPI_Init(SPI2, &SPI_InitStructure);
-
-            /* Enable SPI2 */
-            SPI_Cmd(SPI2, ENABLE);
 			
 		}
 		break;

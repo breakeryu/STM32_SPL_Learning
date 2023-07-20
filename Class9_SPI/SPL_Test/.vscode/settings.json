@@ -5,6 +5,7 @@
         "bsp_usart.h": "c",
         "stm32f10x_rcc.h": "c",
         "stm32f10x_gpio.h": "c",
-        "misc.h": "c"
+        "misc.h": "c",
+        "stm32f10x_spi.h": "c"
     }
 }

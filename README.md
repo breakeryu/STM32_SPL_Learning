@@ -19,9 +19,9 @@ STM32_SPL库的学习过程
 
 ✅	UART
 
-# 进度中
+✅	SPI
 
-💥SPI
+# 进度中
 
 💥IIC
 
@@ -64,3 +64,14 @@ STM32_SPL库的学习过程
 ## July 20, 2023
 
 编写第八课《UART》。
+
+完成第9课《SPI》。
+
+# 参考资料
+
+1. HIT_HT开发库，感谢涛哥。
+2. 屋脊雀STM32F407开发板资料github:https://github.com/wujique/stm32f407
+3. **[STM32F4 Discovery](http://stm32f4-discovery.net/)**
+4. [STM32基础学习](https://www.guyuehome.com/blog/column/id/164)
+5. 野火、正点原子开源资料
+
