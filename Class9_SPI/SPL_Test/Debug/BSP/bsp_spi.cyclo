@@ -1,0 +1,9 @@
+bsp_spi.c:5:6:BSP_SPI_Init	1
+bsp_spi.c:17:6:BSP_SPI_ClkEn	5
+bsp_spi.c:53:6:BSP_SPI_PortCfg	4
+bsp_spi.c:85:6:BSP_SPI_IoCfg	4
+bsp_spi.c:138:6:BSP_SPI_ModeCfg	4
+bsp_spi.c:225:6:BSP_SPI_Tx8Bit	1
+bsp_spi.c:235:6:BSP_SPI_Tx16Bit	1
+bsp_spi.c:245:9:BSP_SPI_TxRx8Bit	5
+bsp_spi.c:270:10:BSP_SPI_TxRx16Bit	5
