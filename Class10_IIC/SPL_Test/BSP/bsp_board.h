@@ -11,6 +11,8 @@
 #include "bsp_dac.h"
 #include "bsp_usart.h"
 #include "bsp_spi.h"
+#include "bsp_i2c.h"
+
 
 
 #endif//__BSP_BOARD_H

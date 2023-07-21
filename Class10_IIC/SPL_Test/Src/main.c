@@ -38,22 +38,13 @@ int main(void)
     *   If using the PA15、PA14、PA13、PB4、PB3 for Remapping Pin, these Clock Must be Config before SWJ REMAP config Function!
     */
   sys_SWJ_REMAP_Config(SWJ_ENABLE);
-  BSP_SPI_Init(SPI1);
-  BSP_SPI_Init(SPI2);
-  PAout(4) = 1;
-  PBout(12) = 1;
+  BSP_I2C_Init(I2C1);
+  BSP_I2C_Init(I2C2);
   while (1)
   {
-    PAout(4) = 0;
-    BSP_SPI_TxRx8Bit(SPI1,0XAA);
-    PAout(4) = 1;
-
-    PBout(12) = 0;
-    BSP_SPI_TxRx8Bit(SPI2,0XAA);
-    PBout(12) = 1;
-
-
-    delay_ms(10);
+    BSP_I2C_IsDeviceConnected(I2C1,(0x1A<<1));
+    BSP_I2C_IsDeviceConnected(I2C2,(0x1A<<1));
+    delay_ms(100);
   }
   
 }

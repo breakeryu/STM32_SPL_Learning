@@ -21,7 +21,6 @@
 
 /* Private variables */
 static uint32_t TM_I2C_Timeout;
-static uint32_t TM_I2C_INT_Clocks[3] = {0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF};
 
 /* Private defines */
 #define I2C_TRANSMITTER_MODE   0

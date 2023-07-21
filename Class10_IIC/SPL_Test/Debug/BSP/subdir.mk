@@ -9,6 +9,7 @@ C_SRCS += \
 ../BSP/bsp_board.c \
 ../BSP/bsp_dac.c \
 ../BSP/bsp_gpio.c \
+../BSP/bsp_i2c.c \
 ../BSP/bsp_nvic.c \
 ../BSP/bsp_rcc.c \
 ../BSP/bsp_spi.c \
@@ -22,6 +23,7 @@ OBJS += \
 ./BSP/bsp_board.o \
 ./BSP/bsp_dac.o \
 ./BSP/bsp_gpio.o \
+./BSP/bsp_i2c.o \
 ./BSP/bsp_nvic.o \
 ./BSP/bsp_rcc.o \
 ./BSP/bsp_spi.o \
@@ -35,6 +37,7 @@ C_DEPS += \
 ./BSP/bsp_board.d \
 ./BSP/bsp_dac.d \
 ./BSP/bsp_gpio.d \
+./BSP/bsp_i2c.d \
 ./BSP/bsp_nvic.d \
 ./BSP/bsp_rcc.d \
 ./BSP/bsp_spi.d \
@@ -51,7 +54,7 @@ BSP/%.o BSP/%.su BSP/%.cyclo: ../BSP/%.c BSP/subdir.mk
 clean: clean-BSP
 
 clean-BSP:
-	-$(RM) ./BSP/bsp_adc.cyclo ./BSP/bsp_adc.d ./BSP/bsp_adc.o ./BSP/bsp_adc.su ./BSP/bsp_board.cyclo ./BSP/bsp_board.d ./BSP/bsp_board.o ./BSP/bsp_board.su ./BSP/bsp_dac.cyclo ./BSP/bsp_dac.d ./BSP/bsp_dac.o ./BSP/bsp_dac.su ./BSP/bsp_gpio.cyclo ./BSP/bsp_gpio.d ./BSP/bsp_gpio.o ./BSP/bsp_gpio.su ./BSP/bsp_nvic.cyclo ./BSP/bsp_nvic.d ./BSP/bsp_nvic.o ./BSP/bsp_nvic.su ./BSP/bsp_rcc.cyclo ./BSP/bsp_rcc.d ./BSP/bsp_rcc.o ./BSP/bsp_rcc.su ./BSP/bsp_spi.cyclo ./BSP/bsp_spi.d ./BSP/bsp_spi.o ./BSP/bsp_spi.su ./BSP/bsp_tim.cyclo ./BSP/bsp_tim.d ./BSP/bsp_tim.o ./BSP/bsp_tim.su ./BSP/bsp_usart.cyclo ./BSP/bsp_usart.d ./BSP/bsp_usart.o ./BSP/bsp_usart.su ./BSP/delay.cyclo ./BSP/delay.d ./BSP/delay.o ./BSP/delay.su ./BSP/sys.cyclo ./BSP/sys.d ./BSP/sys.o ./BSP/sys.su
+	-$(RM) ./BSP/bsp_adc.cyclo ./BSP/bsp_adc.d ./BSP/bsp_adc.o ./BSP/bsp_adc.su ./BSP/bsp_board.cyclo ./BSP/bsp_board.d ./BSP/bsp_board.o ./BSP/bsp_board.su ./BSP/bsp_dac.cyclo ./BSP/bsp_dac.d ./BSP/bsp_dac.o ./BSP/bsp_dac.su ./BSP/bsp_gpio.cyclo ./BSP/bsp_gpio.d ./BSP/bsp_gpio.o ./BSP/bsp_gpio.su ./BSP/bsp_i2c.cyclo ./BSP/bsp_i2c.d ./BSP/bsp_i2c.o ./BSP/bsp_i2c.su ./BSP/bsp_nvic.cyclo ./BSP/bsp_nvic.d ./BSP/bsp_nvic.o ./BSP/bsp_nvic.su ./BSP/bsp_rcc.cyclo ./BSP/bsp_rcc.d ./BSP/bsp_rcc.o ./BSP/bsp_rcc.su ./BSP/bsp_spi.cyclo ./BSP/bsp_spi.d ./BSP/bsp_spi.o ./BSP/bsp_spi.su ./BSP/bsp_tim.cyclo ./BSP/bsp_tim.d ./BSP/bsp_tim.o ./BSP/bsp_tim.su ./BSP/bsp_usart.cyclo ./BSP/bsp_usart.d ./BSP/bsp_usart.o ./BSP/bsp_usart.su ./BSP/delay.cyclo ./BSP/delay.d ./BSP/delay.o ./BSP/delay.su ./BSP/sys.cyclo ./BSP/sys.d ./BSP/sys.o ./BSP/sys.su
 
 .PHONY: clean-BSP
 
