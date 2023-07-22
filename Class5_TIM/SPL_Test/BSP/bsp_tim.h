@@ -5,6 +5,9 @@
 #include "stm32f10x_rcc.h"
 #include "stm32f10x_gpio.h"
 #include "stm32f10x_tim.h"
+#include "bsp_gpio.h"
+#include "bsp_nvic.h"
+
 
 
 void BSP_PWM_Init(void);

@@ -16,7 +16,7 @@ uint16_t capture = 0;
 
 void BSP_PWM_Init(void)
 {
-  GPIO_InitTypeDef GPIO_InitStructure;
+
   TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
   TIM_OCInitTypeDef  TIM_OCInitStructure;
 
@@ -29,10 +29,8 @@ void BSP_PWM_Init(void)
   /* GPIOB clock enable In BSP_RCC*/
 
   //Configure the TIM4 Ouput Channel 3 as alternate function push-pull 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOB, &GPIO_InitStructure);
+
+  BSP_GPIO_SetCfg(GPIOB, GPIO_Pin_8, GPIO_Speed_50MHz, GPIO_Mode_AF_PP);
 
 
   /* -----------------------------------------------------------------------
@@ -97,8 +95,7 @@ void BSP_Timer_Init(void)
 {
   TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
   TIM_OCInitTypeDef  TIM_OCInitStructure;
-  NVIC_InitTypeDef NVIC_InitStructure;
-  GPIO_InitTypeDef GPIO_InitStructure;
+
    /* TIM4 clock enable */
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 
@@ -109,10 +106,8 @@ void BSP_Timer_Init(void)
   /* GPIOB clock enable In BSP_RCC*/
 
   //Configure the TIM4 Ouput Channel 1 as alternate function push-pull 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOB, &GPIO_InitStructure);
+
+  BSP_GPIO_SetCfg(GPIOB, GPIO_Pin_6, GPIO_Speed_50MHz, GPIO_Mode_Out_PP);
 
 /* -----------------------------------------------------------------------
     TIM4 Configuration: generate 1 PWM signals with 1 different duty cycles:
@@ -154,13 +149,8 @@ void BSP_Timer_Init(void)
 
 
   /* Enable the TIM4 global Interrupt */
-  NVIC_InitStructure.NVIC_IRQChannel = TIM4_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
-  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
 
-  NVIC_Init(&NVIC_InitStructure);
-
+  BSP_NVIC_Init(0,1,TIM4_IRQn,2);
 
   /* TIM4 enable counter */
   TIM_Cmd(TIM4, ENABLE);
@@ -200,7 +190,6 @@ void BSP_TIM_OCAcitve(void)
 
   TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
   TIM_OCInitTypeDef  TIM_OCInitStructure;
-  GPIO_InitTypeDef GPIO_InitStructure;
    /* TIM4 clock enable */
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
 
@@ -211,10 +200,7 @@ void BSP_TIM_OCAcitve(void)
   /* GPIOB clock enable In BSP_RCC*/
 
   //Configure the TIM4 Ouput Channel 1 as alternate function push-pull 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOB, &GPIO_InitStructure);
+  BSP_GPIO_SetCfg(GPIOB, GPIO_Pin_6, GPIO_Speed_50MHz, GPIO_Mode_AF_PP);
 
    /* ---------------------------------------------------------------
     TIM4 Configuration: 
@@ -264,8 +250,7 @@ void BSP_PWM_INPUT_Init(void)
 {
 
   TIM_ICInitTypeDef  TIM_ICInitStructure;
-  GPIO_InitTypeDef GPIO_InitStructure;
-  NVIC_InitTypeDef NVIC_InitStructure;
+  
    /* TIM5 clock enable */
   RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM5, ENABLE);
 
@@ -273,18 +258,11 @@ void BSP_PWM_INPUT_Init(void)
   /* GPIOA clock enable In BSP_RCC*/
 
   //Configure the TIM4 Ouput Channel 1 as alternate function push-pull 
-  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-  GPIO_Init(GPIOA, &GPIO_InitStructure);
+  BSP_GPIO_SetCfg(GPIOA, GPIO_Pin_0, GPIO_Speed_50MHz, GPIO_Mode_IN_FLOATING);
 
   /* Enable the TIM5 global Interrupt */
-  NVIC_InitStructure.NVIC_IRQChannel = TIM5_IRQn;
-  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
-  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;
-  NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;
-  NVIC_Init(&NVIC_InitStructure);
 
+  BSP_NVIC_Init(0,1,TIM5_IRQn,2);
 
  /* TIM5 configuration: PWM Input mode ------------------------
      The external signal is connected to TIM5 CH1 pin (PA.00), 

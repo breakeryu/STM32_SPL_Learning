@@ -29,7 +29,7 @@ Src/main.o: ../Src/main.c \
  ../BSP/bsp_rcc.h \
  ../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h \
  ../BSP/delay.h ../BSP/sys.h ../BSP/sys.h ../BSP/bsp_gpio.h \
- ../BSP/bsp_tim.h
+ ../BSP/bsp_tim.h ../BSP/bsp_nvic.h
 ../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/stm32f10x.h:
 ../Libraries/CMSIS/CM3/CoreSupport/core_cm3.h:
 ../Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.h:
@@ -65,3 +65,4 @@ Src/main.o: ../Src/main.c \
 ../BSP/sys.h:
 ../BSP/bsp_gpio.h:
 ../BSP/bsp_tim.h:
+../BSP/bsp_nvic.h:

@@ -1,2 +1,10 @@
-../BSP/bsp_gpio.c:4:6:BSP_GPIO_Init	16	static
-../BSP/bsp_gpio.c:24:6:BSP_GPIO_Write_Demo	16	static
+../BSP/bsp_gpio.c:4:6:BSP_GPIO_Init	8	static
+../BSP/bsp_gpio.c:16:6:BSP_GPIO_Write_Demo	8	static
+../BSP/bsp_gpio.c:54:6:BSP_GPIO_SetCfg	24	static
+../BSP/bsp_gpio.c:71:10:BSP_GPIO_GetGPIO_InSt	16	static
+../BSP/bsp_gpio.c:82:9:BSP_GPIO_GetGPIO_InPortSt	16	static
+../BSP/bsp_gpio.c:92:10:BSP_GPIO_GetGPIO_OutSt	16	static
+../BSP/bsp_gpio.c:103:9:BSP_GPIO_GetGPIO_OutPortSt	16	static
+../BSP/bsp_gpio.c:113:6:BSP_GPIO_SetGPIO_OutSt	16	static
+../BSP/bsp_gpio.c:124:6:BSP_GPIO_SetGPIO_OutPortSt	16	static
+../BSP/bsp_gpio.c:141:9:BSP_GPIO_SetGPIO_Lock	24	static

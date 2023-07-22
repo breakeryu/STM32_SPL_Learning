@@ -37,8 +37,11 @@ int main(void)
     */
   sys_SWJ_REMAP_Config(SWJ_ENABLE);
 
-  BSP_PWM_INPUT_Init();
+  //BSP_PWM_INPUT_Init();
 
+  // BSP_Timer_Init();
+
+  BSP_PWM_Init();
 
   while (1)
   {

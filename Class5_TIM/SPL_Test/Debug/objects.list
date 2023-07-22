@@ -1,5 +1,6 @@
 "./BSP/bsp_board.o"
 "./BSP/bsp_gpio.o"
+"./BSP/bsp_nvic.o"
 "./BSP/bsp_rcc.o"
 "./BSP/bsp_tim.o"
 "./BSP/delay.o"
