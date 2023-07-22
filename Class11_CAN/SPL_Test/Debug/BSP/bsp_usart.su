@@ -1,0 +1,16 @@
+../BSP/bsp_usart.c:28:6:BSP_USART_Init	32	static
+../BSP/bsp_usart.c:70:6:BSP_USART_SendData	24	static
+../BSP/bsp_usart.c:101:6:BSP_USART_IOCfg	24	static
+../BSP/bsp_usart.c:266:6:BSP_USART_IORemap	16	static
+../BSP/bsp_usart.c:332:6:BSP_USART_ClockEn	16	static
+../BSP/bsp_usart.c:378:6:BSP_USART_SetIrq	24	static
+../BSP/bsp_usart.c:434:26:USART1_IrqRxCallBack	16	static
+../BSP/bsp_usart.c:439:6:USART1_IRQHandler	16	static
+../BSP/bsp_usart.c:465:26:USART2_IrqCallBack	16	static
+../BSP/bsp_usart.c:470:6:USART2_IRQHandler	8	static
+../BSP/bsp_usart.c:487:26:USART3_IrqCallBack	16	static
+../BSP/bsp_usart.c:492:6:USART3_IRQHandler	8	static
+../BSP/bsp_usart.c:510:26:UART4_IrqRxCallBack	16	static
+../BSP/bsp_usart.c:515:6:UART4_IRQHandler	16	static
+../BSP/bsp_usart.c:541:26:UART5_IrqRxCallBack	16	static
+../BSP/bsp_usart.c:546:6:UART5_IRQHandler	16	static
