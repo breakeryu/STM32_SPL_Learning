@@ -1,0 +1,8 @@
+bsp_can.c:5:6:BSP_CAN_Init	1
+bsp_can.c:15:6:BSP_CAN_ClkEn	2
+bsp_can.c:38:6:BSP_CAN_IoCfg	2
+bsp_can.c:84:6:BSP_CAN_IrqEn	2
+bsp_can.c:108:6:BSP_CAN_ModeCfg	2
+bsp_can.c:201:6:USB_LP_CAN_RX0_IRQHandler	1
+bsp_can.c:241:9:CAN1_Send_Msg	8
+bsp_can.c:273:9:CAN1_Receive_Msg	2

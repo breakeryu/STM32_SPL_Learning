@@ -1,0 +1,8 @@
+../BSP/bsp_adc.c:11:6:BSP_ADC_Init	72	static
+../BSP/bsp_adc.c:82:6:BSP_ADC_Val2Vltg	16	static
+../BSP/bsp_adc.c:110:13:BSP_ADC_InitPin	16	static
+../BSP/bsp_adc.c:121:6:BSP_ADC_Channel_Init	8	static
+../BSP/bsp_adc.c:159:13:BSP_ADC_CfgCLK	16	static
+../BSP/bsp_adc.c:192:6:BSP_ADC_Init_ADCxMode	40	static
+../BSP/bsp_adc.c:227:6:BSP_ADC_Init_All	8	static
+../BSP/bsp_adc.c:250:10:BSP_ADC_Read	24	static

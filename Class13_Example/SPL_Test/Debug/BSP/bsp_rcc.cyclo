@@ -1,0 +1,2 @@
+bsp_rcc.c:16:6:BSP_RCC_Init	1
+bsp_rcc.c:42:6:BSP_RCC_Periph_Clock_Init	1
