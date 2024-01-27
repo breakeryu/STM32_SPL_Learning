@@ -1,0 +1,15 @@
+"E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\bin\armproc.dll" 
+
+"E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\bin\armstlink2.dll" 
+
+"E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Exe\prj_HAL_Demo.out" 
+
+--plugin="E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\bin\armbat.dll" 
+
+--device_macro="E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+--flash_loader="E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\config\flashloader\ST\FlashSTM32F10xxE.board" 
+
+
+
+
