@@ -5,6 +5,7 @@ E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\bsp_led.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\bsp_tim_pwm.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\bsp_timer.pbi
+E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\bsp_uart_fifo.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\main.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\SEGGER_HardFaultHandler.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\stm32f1xx_hal.pbi
@@ -19,5 +20,7 @@ E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\stm32f1xx_hal_rcc_ex.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\stm32f1xx_hal_tim.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\stm32f1xx_hal_tim_ex.pbi
+E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\stm32f1xx_hal_uart.pbi
+E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\stm32f1xx_hal_usart.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\stm32f1xx_it.pbi
 E:\Users\Learning\STM32_SPL_Learning\STM32F10X\HAL_LIB_IAR\prj_HAL_Demo\Project\EWARMv8\FLASH\Obj\system_stm32f1xx.pbi

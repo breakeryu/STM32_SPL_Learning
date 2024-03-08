@@ -71,7 +71,7 @@
 //#include "bsp_cpu_rtc.h"
 //#include "bsp_cpu_adc.h"
 //#include "bsp_cpu_dac.h"
-//#include "bsp_uart_fifo.h"
+#include "bsp_uart_fifo.h"
 //#include "bsp_uart_gps.h"
 //#include "bsp_uart_esp8266.h"
 //#include "bsp_uart_sim800.h"

@@ -32,11 +32,15 @@
 int main(void)
 {
   uint8_t ucKeyCode;		/* 按键代码 */
-  bsp_Init();		/* 硬件初始化 */
-
-
-  bsp_StartAutoTimer(0, 500);	/* 启动1个500ms的自动重装的定时器 */
+  uint8_t read;
+  const char buf1[] = "接收到串口命令1\r\n";
+  const char buf2[] = "接收到串口命令2\r\n";
+  const char buf3[] = "接收到串口命令3\r\n";
+  const char buf4[] = "接收到串口命令4\r\n";
   
+  bsp_Init();		/* 硬件初始化 */
+  bsp_StartAutoTimer(0, 500);	/* 启动1个500ms的自动重装的定时器 */
+  comSendBuf(COM1, (uint8_t *)buf1, strlen(buf1));
   /* 进入主程序循环体 */
   while (1)
   {
@@ -49,7 +53,32 @@ int main(void)
           /* 每隔500ms 进来一次 */  
           bsp_LedToggle(0);			
       }
-		
+      
+      /* 接收到的串口命令处理 */
+      if (comGetChar(COM1, &read))
+      {
+          switch (read)
+          {
+              case '1':
+                  comSendBuf(COM1, (uint8_t *)buf1, strlen(buf1));
+                  break;
+
+              case '2':
+                  comSendBuf(COM1, (uint8_t *)buf2, strlen(buf2));
+                  break;
+
+              case '3':
+                  comSendBuf(COM1, (uint8_t *)buf3, strlen(buf3));
+                  break;
+
+              case '4':
+                  comSendBuf(COM1, (uint8_t *)buf4, strlen(buf4));
+                  break;	
+              
+              default:
+                  break;
+          }
+      }
     
       /* 按键滤波和检测由后台systick中断服务程序实现，我们只需要调用bsp_GetKey读取键值即可。 */
 		ucKeyCode = bsp_GetKey();	/* 读取键值, 无键按下时返回 KEY_NONE = 0 */

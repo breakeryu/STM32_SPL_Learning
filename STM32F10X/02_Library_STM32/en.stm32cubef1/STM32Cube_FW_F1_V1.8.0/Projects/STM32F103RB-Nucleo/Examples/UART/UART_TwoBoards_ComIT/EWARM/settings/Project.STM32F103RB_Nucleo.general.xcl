@@ -1,0 +1,15 @@
+"E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\bin\armproc.dll" 
+
+"E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\bin\armstlink2.dll" 
+
+"E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Exe\Project.out" 
+
+--plugin="E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\bin\armbat.dll" 
+
+--device_macro="E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+--flash_loader="E:\ProgramFiles\IAR Systems\Embedded Workbench 8.2\arm\config\flashloader\ST\FlashSTM32F10xxB.board" 
+
+
+
+

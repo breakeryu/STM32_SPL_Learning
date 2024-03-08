@@ -1,0 +1,359 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  08/Mar/2024  09:15:29
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Exe\Project.out
+#    Map file     =  
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\List\Project.map
+#    Command line =  
+#        -f C:\Users\iccad\AppData\Local\Temp\EW5F64.tmp
+#        (E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\main.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\startup_stm32f103xb.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_hal.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_hal_cortex.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_hal_dma.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_hal_gpio.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_hal_msp.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_hal_rcc.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_hal_rcc_ex.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_hal_uart.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_it.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\stm32f1xx_nucleo.o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj\system_stm32f1xx.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall
+#        --no_out_extension -o
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Exe\Project.out
+#        --map
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\List\Project.map
+#        --config
+#        E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\stm32f103xb_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x801'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'4fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xec
+  .intvec            ro code   0x800'0000    0xec  startup_stm32f103xb.o [1]
+                             - 0x800'00ec    0xec
+
+"P1":                                      0x137f
+  .text              ro code   0x800'00ec   0x4ca  stm32f1xx_hal_rcc.o [1]
+  .text              ro code   0x800'05b8     0xc  stm32f1xx_hal.o [1]
+  .text              ro code   0x800'05c4    0x40  stm32f1xx_hal.o [1]
+  .text              ro code   0x800'0604    0xe8  stm32f1xx_hal_cortex.o [1]
+  .text              ro code   0x800'06ec   0x3d0  stm32f1xx_hal_uart.o [1]
+  .text              ro code   0x800'0abc    0xc0  stm32f1xx_hal_msp.o [1]
+  .text              ro code   0x800'0b7c    0xbc  stm32f1xx_hal_dma.o [1]
+  .text              ro code   0x800'0c38   0x164  main.o [1]
+  .text              ro code   0x800'0d9c   0x2a8  stm32f1xx_hal_gpio.o [1]
+  .text              ro code   0x800'1044    0x26  stm32f1xx_hal.o [1]
+  .text              ro code   0x800'106c   0x119  stm32f1xx_nucleo.o [1]
+  .text              ro code   0x800'1188    0x28  stm32f1xx_hal.o [1]
+  .text              ro code   0x800'11b0     0x6  ABImemclr4.o [3]
+  .text              ro code   0x800'11b8    0x32  ABImemset48.o [3]
+  .text              ro code   0x800'11ec    0x5c  system_stm32f1xx.o [1]
+  .text              ro code   0x800'1248    0x38  packbits_init_single.o [3]
+  .text              ro code   0x800'1280    0x28  stm32f1xx_it.o [1]
+  .text              ro code   0x800'12a8    0x10  stm32f1xx_hal.o [1]
+  .text              ro code   0x800'12b8    0x28  data_init.o [3]
+  .iar.init_table    const     0x800'12e0    0x10  - Linker created -
+  .text              ro code   0x800'12f0    0x1e  cmain.o [3]
+  .text              ro code   0x800'130e     0x4  low_level_init.o [2]
+  .text              ro code   0x800'1312     0x4  exit.o [2]
+  .text              ro code   0x800'1318     0xa  cexit.o [3]
+  .text              ro code   0x800'1324    0x14  exit.o [4]
+  .text              ro code   0x800'1338    0x10  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1348     0xc  cstartup_M.o [3]
+  .rodata            const     0x800'1354     0x8  system_stm32f1xx.o [1]
+  .text              ro code   0x800'135c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1360     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1364     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1368     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'136c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1370     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1374     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1378     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'137c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1380     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1384     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1388     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'138c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1390     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1394     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'1398     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'139c     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13a0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13a4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13a8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13ac     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13b0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13b4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13b8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13bc     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13c0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13c4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13c8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13cc     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13d0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13d4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13d8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13dc     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13e0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13e4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13e8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13ec     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13f0     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13f4     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13f8     0x4  startup_stm32f103xb.o [1]
+  .text              ro code   0x800'13fc     0x4  startup_stm32f103xb.o [1]
+  .rodata            const     0x800'1400     0x0  packbits_init_single.o [3]
+  Initializer bytes  const     0x800'1400    0x6b  <for P2-1>
+                             - 0x800'146b  0x137f
+
+"P2", part 1 of 2:                          0x118
+  P2-1                        0x2000'0000   0x118  <Init block>
+    .data            inited   0x2000'0000   0x100  main.o [1]
+    .data            inited   0x2000'0100     0xc  stm32f1xx_hal.o [1]
+    .data            inited   0x2000'010c     0x4  stm32f1xx_nucleo.o [1]
+    .data            inited   0x2000'0110     0x4  stm32f1xx_nucleo.o [1]
+    .data            inited   0x2000'0114     0x4  system_stm32f1xx.o [1]
+                            - 0x2000'0118   0x118
+
+"P2", part 2 of 2:                          0x400
+  CSTACK                      0x2000'0118   0x400  <Block>
+    CSTACK           uninit   0x2000'0118   0x400  <Block tail>
+                            - 0x2000'0518   0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'146b   0x801'ffff  0x1'eb95
+  0x2000'0518  0x2000'4fff    0x4ae8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x6b (38% of destination):
+           0x800'1400   0x6b
+    1 destination range, total size 0x118:
+          0x2000'0000  0x118
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj: [1]
+    main.o                      356       97      256
+    startup_stm32f103xb.o       416
+    stm32f1xx_hal.o             170        5       12
+    stm32f1xx_hal_cortex.o      232
+    stm32f1xx_hal_dma.o         188
+    stm32f1xx_hal_gpio.o        680
+    stm32f1xx_hal_msp.o         192
+    stm32f1xx_hal_rcc.o       1 226
+    stm32f1xx_hal_uart.o        976
+    stm32f1xx_it.o               40
+    stm32f1xx_nucleo.o          281        3        8
+    system_stm32f1xx.o           92       10        4
+    -------------------------------------------------
+    Total:                    4 849      115      280
+
+dl7M_tln.a: [2]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+rt7M_tl.a: [3]
+    ABImemclr4.o                  6
+    ABImemset48.o                50
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    packbits_init_single.o       56
+    -------------------------------------------------
+    Total:                      204
+
+shb_l.a: [4]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         15
+    Linker created                        16    1 024
+-----------------------------------------------------
+    Grand Total:              5 096      131    1 304
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'12e0          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'12f0          --   Gb  - Linker created -
+?main                    0x800'12f1         Code  Gb  cmain.o [3]
+AHBPrescTable            0x800'1238   0x10  Data  Gb  system_stm32f1xx.o [1]
+APBPrescTable            0x800'1354    0x8  Data  Gb  system_stm32f1xx.o [1]
+BSP_LED_Init             0x800'106d   0x44  Code  Gb  stm32f1xx_nucleo.o [1]
+BSP_LED_Off              0x800'10cd   0x10  Code  Gb  stm32f1xx_nucleo.o [1]
+BSP_LED_On               0x800'10bd   0x10  Code  Gb  stm32f1xx_nucleo.o [1]
+BSP_LED_Toggle           0x800'10f1   0x10  Code  Gb  stm32f1xx_nucleo.o [1]
+BSP_PB_Init              0x800'1101   0x60  Code  Gb  stm32f1xx_nucleo.o [1]
+BUTTON_IRQn              0x800'1184    0x1  Data  Gb  stm32f1xx_nucleo.o [1]
+BUTTON_PIN               0x800'1180    0x2  Data  Gb  stm32f1xx_nucleo.o [1]
+BUTTON_PORT             0x2000'0110    0x4  Data  Gb  stm32f1xx_nucleo.o [1]
+BusFault_Handler         0x800'1287    0x2  Code  Gb  stm32f1xx_it.o [1]
+CSTACK$$Base            0x2000'0118          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0518          --   Gb  - Linker created -
+DebugMon_Handler         0x800'128d    0x2  Code  Gb  stm32f1xx_it.o [1]
+EXTI15_10_IRQHandler     0x800'12a1    0x8  Code  Gb  stm32f1xx_it.o [1]
+Error_Handler            0x800'0d85   0x18  Code  Lc  main.o [1]
+HAL_DMA_Abort_IT         0x800'0b7d   0x94  Code  Gb  stm32f1xx_hal_dma.o [1]
+HAL_Delay                0x800'1189   0x28  Code  Wk  stm32f1xx_hal.o [1]
+HAL_GPIO_DeInit          0x800'0f1d   0xc8  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_EXTI_Callback   0x800'0d6d    0xe  Code  Gb  main.o [1]
+HAL_GPIO_EXTI_IRQHandler
+                         0x800'0ffb   0x10  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_Init            0x800'0d9d  0x180  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin       0x800'0fed    0xe  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GPIO_WritePin        0x800'0fe5    0x8  Code  Gb  stm32f1xx_hal_gpio.o [1]
+HAL_GetTick              0x800'05b9    0xc  Code  Wk  stm32f1xx_hal.o [1]
+HAL_IncTick              0x800'12a9   0x10  Code  Wk  stm32f1xx_hal.o [1]
+HAL_Init                 0x800'1045   0x20  Code  Gb  stm32f1xx_hal.o [1]
+HAL_InitTick             0x800'05c5   0x40  Code  Wk  stm32f1xx_hal.o [1]
+HAL_NVIC_DisableIRQ      0x800'0689   0x1e  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_NVIC_EnableIRQ       0x800'0673   0x16  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_NVIC_SetPriority     0x800'0639   0x3a  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                         0x800'061f   0x1a  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_RCC_ClockConfig      0x800'040d   0xf4  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x800'054f   0x10  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x800'055f    0xe  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x800'0515   0x3a  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq::aPLLMULFactorTable
+                         0x800'05a4   0x10  Data  Lc  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq::aPredivFactorTable
+                         0x800'05b4    0x2  Data  Lc  stm32f1xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x800'00ed  0x318  Code  Gb  stm32f1xx_hal_rcc.o [1]
+HAL_SYSTICK_Config       0x800'06a7   0x28  Code  Gb  stm32f1xx_hal_cortex.o [1]
+HAL_UART_DeInit          0x800'0763   0x2a  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_ErrorCallback   0x800'0d6b    0x2  Code  Gb  main.o [1]
+HAL_UART_IRQHandler      0x800'0831  0x14e  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_Init            0x800'06ed   0x1e  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_MspDeInit       0x800'0b3b   0x34  Code  Gb  stm32f1xx_hal_msp.o [1]
+HAL_UART_MspInit         0x800'0abd   0x7e  Code  Gb  stm32f1xx_hal_msp.o [1]
+HAL_UART_Receive_IT      0x800'07cf   0x56  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_RxCpltCallback
+                         0x800'0d61    0x2  Code  Gb  main.o [1]
+HAL_UART_Transmit_IT     0x800'078d   0x42  Code  Gb  stm32f1xx_hal_uart.o [1]
+HAL_UART_TxCpltCallback
+                         0x800'0d5f    0x2  Code  Gb  main.o [1]
+HardFault_Handler        0x800'1283    0x2  Code  Gb  stm32f1xx_it.o [1]
+LED_PIN                  0x800'117c    0x2  Data  Gb  stm32f1xx_nucleo.o [1]
+LED_PORT                0x2000'010c    0x4  Data  Gb  stm32f1xx_nucleo.o [1]
+MemManage_Handler        0x800'1285    0x2  Code  Gb  stm32f1xx_it.o [1]
+NMI_Handler              0x800'1281    0x2  Code  Gb  stm32f1xx_it.o [1]
+PendSV_Handler           0x800'128f    0x2  Code  Gb  stm32f1xx_it.o [1]
+Region$$Table$$Base      0x800'12e0          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'12f0          --   Gb  - Linker created -
+SVC_Handler              0x800'128b    0x2  Code  Gb  stm32f1xx_it.o [1]
+SysTick_Handler          0x800'1291    0x4  Code  Gb  stm32f1xx_it.o [1]
+SystemClock_Config       0x800'0cff   0x60  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'0114    0x4  Data  Gb  system_stm32f1xx.o [1]
+SystemInit               0x800'11ed   0x3c  Code  Gb  system_stm32f1xx.o [1]
+UART_DMAAbortOnError     0x800'099d    0xc  Code  Lc  stm32f1xx_hal_uart.o [1]
+UART_EndRxTransfer       0x800'097f   0x1c  Code  Lc  stm32f1xx_hal_uart.o [1]
+UART_Receive_IT          0x800'09a9   0x92  Code  Lc  stm32f1xx_hal_uart.o [1]
+UART_SetConfig           0x800'0a3b   0x78  Code  Lc  stm32f1xx_hal_uart.o [1]
+USART1_IRQHandler        0x800'1295    0x6  Code  Gb  stm32f1xx_it.o [1]
+UartHandle              0x2000'0004   0x40  Data  Gb  main.o [1]
+UartReady               0x2000'0000    0x1  Data  Gb  main.o [1]
+UsageFault_Handler       0x800'1289    0x2  Code  Gb  stm32f1xx_it.o [1]
+UserButtonStatus        0x2000'0044    0x4  Data  Gb  main.o [1]
+__NVIC_SetPriority       0x800'0605   0x1a  Code  Lc  stm32f1xx_hal_cortex.o [1]
+__aeabi_memclr4          0x800'11b1         Code  Gb  ABImemclr4.o [3]
+__cmain                  0x800'12f1         Code  Gb  cmain.o [3]
+__exit                   0x800'1325   0x14  Code  Gb  exit.o [4]
+__iar_Memset4_word       0x800'11b9         Code  Gb  ABImemset48.o [3]
+__iar_Memset8_word       0x800'11b9         Code  Gb  ABImemset48.o [3]
+__iar_data_init3         0x800'12b9   0x28  Code  Gb  data_init.o [3]
+__iar_packbits_init_single3
+                         0x800'1249   0x38  Code  Gb  packbits_init_single.o [3]
+__iar_program_start      0x800'1349         Code  Gb  cstartup_M.o [3]
+__low_level_init         0x800'130f    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  startup_stm32f103xb.o [1]
+_call_main               0x800'12fd         Code  Gb  cmain.o [3]
+_exit                    0x800'1319         Code  Gb  cexit.o [3]
+_main                    0x800'130b         Code  Gb  cmain.o [3]
+aRxBuffer               0x2000'00a4   0x5c  Data  Gb  main.o [1]
+aTxBuffer               0x2000'0048   0x5c  Data  Gb  main.o [1]
+exit                     0x800'1313    0x4  Code  Gb  exit.o [2]
+main                     0x800'0c39   0xba  Code  Gb  main.o [1]
+uwTick                  0x2000'0104    0x4  Data  Gb  stm32f1xx_hal.o [1]
+uwTickFreq              0x2000'0100    0x1  Data  Gb  stm32f1xx_hal.o [1]
+uwTickPrio              0x2000'0108    0x4  Data  Gb  stm32f1xx_hal.o [1]
+
+
+[1] = E:\Users\Learning\STM32_SPL_Learning\STM32F10X\02_Library_STM32\en.stm32cubef1\STM32Cube_FW_F1_V1.8.0\Projects\STM32F103RB-Nucleo\Examples\UART\UART_TwoBoards_ComIT\EWARM\STM32F103RB_Nucleo\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+  5 096 bytes of readonly  code memory
+    131 bytes of readonly  data memory
+  1 304 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

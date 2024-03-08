@@ -1209,6 +1209,9 @@
             <name>$PROJ_DIR$\..\..\User\BSP\src\bsp_timer.c</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\..\..\User\BSP\src\bsp_uart_fifo.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\User\BSP\stm32f1xx_it.c</name>
         </file>
     </group>
@@ -1264,6 +1267,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\Libraries\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Libraries\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\Libraries\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_usart.c</name>
         </file>
     </group>
     <group>
